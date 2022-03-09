@@ -5,3 +5,10 @@ h1 {
 html {
   scroll-behavior: smooth;
 }
+
+
+.test {
+  background-color: red;
+  width: 100px;
+  
+}
