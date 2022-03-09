@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getResult } from "../../actions";
+
 
 
 const Search = () => {
