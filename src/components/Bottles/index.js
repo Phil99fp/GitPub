@@ -6,6 +6,7 @@ const Bottles = () => {
   return (
     <>
       <div>
+        <h2>Check out some repos while you wait for your order!</h2>
         <div className="loader-wrap">
           <div className="bottle-wrap">
             <div className="cap">
