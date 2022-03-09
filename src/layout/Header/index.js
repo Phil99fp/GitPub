@@ -7,7 +7,6 @@ const Header = () => {
     <>
       <span>
         <h1>GitPub</h1>
-        <div className="redBottle"></div>
       </span>
     </>
   );

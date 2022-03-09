@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Search, Repo } from "../../components";
+import { Search, Repo, Bottles } from "../../components";
 import { useSelector, useDispatch } from "react-redux";
 import { getResult } from "../../actions";
 import axios from "axios";
@@ -47,6 +47,7 @@ function Home() {
 
   return (
     <>
+    <Bottles/>
       <section>
         <form role="form" onSubmit={handleSubmit}>
           <label htmlFor="usernameSearch">Username: </label>
