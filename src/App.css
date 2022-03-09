@@ -10,5 +10,10 @@ html {
 .test {
   background-color: red;
   width: 100px;
-  
+
+}
+
+
+form {
+  display: block;
 }
