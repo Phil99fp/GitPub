@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { getResult } from "../../actions";
 import axios from 'axios'
 
-
 function Home() {
   const [username, setUsername] = useState("");
   const [repos, setRepos] = useState([{name: ""}]);
@@ -57,6 +56,7 @@ function Home() {
   return (
     <>
       <section>
+<<<<<<< Updated upstream
         <h1>Home</h1>
 
         <h1>USERNAME INPUT HERE</h1>
@@ -74,10 +74,25 @@ function Home() {
         </form>
 
         <p>
+=======
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h1>
+          <link rel="shortcut icon" href="../img/gitpub.png" />
+        </h1>
+        <p>
+          <h1>USERNAME INPUT HERE</h1>
+          <Search />
+>>>>>>> Stashed changes
           Lorem ipsum dolor sit amet. Ad omnis esse aut ullam obcaecati qui quas
           voluptatem qui error
         </p>
+<<<<<<< Updated upstream
         <Repo user= {username} results={repos} />
+=======
+>>>>>>> Stashed changes
       </section>
     </>
   );
