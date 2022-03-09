@@ -10,37 +10,27 @@ const Repo = ({user, results}) => {
   // }
 
   const displayResults = results.map((eachRepo) => {
-
     
   return (
-    <div >
-      <ul >
-        <li > Name: {eachRepo.name}</li>
-        <li >
-  
-          Stargazers: {eachRepo.stargazers_count}
-        </li>
-        <li > Forks: {eachRepo.forks_count}</li>
-        <li > Issues: {eachRepo.open_issues}</li>
-      </ul>
+    <div key={eachRepo.name}>
+      <h1> Name: {eachRepo.name}</h1>
+      <h2> Stargazers: {eachRepo.stargazers_count}</h2>
+      <h2> Forks: {eachRepo.forks_count}</h2>
+      <h2> Issues: {eachRepo.open_issues}</h2>
     </div>
   );
   
 })
 
-  
-
-
-
 
   return (
     <>
  
-     
+      
         <div>
           <h1> hello world</h1>
           <div >
-            {displayResults}
+            <ul>{displayResults}</ul>
           </div>
         </div>
       
