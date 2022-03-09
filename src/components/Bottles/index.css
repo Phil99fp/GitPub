@@ -1,6 +1,8 @@
 /* Bottles */
 
 
+
+
 *,
 :after,
 :before {
@@ -27,11 +29,11 @@
 }
 
 .loader-wrap {
-	top: 50%;
+	top: 70px;
 	left: 50%;
 	width: 374px;
 	height: 194px;
-	position: fixed;
+	position: relative;
 	margin-top: -97px;
 	margin-left: -187px;
 }
