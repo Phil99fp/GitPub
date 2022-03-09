@@ -1,12 +1,22 @@
-
-
 span {
-    position: fixed;
-    width: 100vw;
-    background-color: black;
-    padding: 50px;
-    display: block;
-    justify-content: space-evenly;
-    color: #222222;
+  width: 100vw;
+  background-color: #964b00;
+  padding: 10px;
+  display: block;
+  justify-content: space-evenly;
+  color: #222222;
 }
 
+.redBottle {
+  margin-right: 200px;
+  margin-bottom: 126px;
+  height: 1px;
+  width: 1px;
+}
+
+h1 {
+  font-family: cursive;
+  color: white;
+  text-align: center;
+  font-size: 100px;
+}
