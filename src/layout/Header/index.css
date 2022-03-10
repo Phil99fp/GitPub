@@ -1,0 +1,18 @@
+span {
+    position: relative;
+    width: 100vw;
+    background-color: #964b00;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #222222;
+}
+
+h1 {
+  font-family: cursive;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
