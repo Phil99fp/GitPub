@@ -9,6 +9,8 @@ function App() {
   return (
     <>
       <Header />
+      <br></br>
+      <br></br>
       <Home />
     </>
   );
