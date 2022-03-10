@@ -20,22 +20,22 @@ const Repo = ({ user, results }) => {
     const link = `https://www.github.com/${eachRepo.full_name}`;
     return (
       <>
-        <div className="eachRepo" key={eachRepo.name}>
-          <h2>
-            {eachRepo.name}
-          </h2>
+        <div className = "wholeRepo">
+          <div className="eachRepo" key={eachRepo.name}>
+            <h2>{eachRepo.name}</h2>
 
-          <div>
-            <h3> &#11088; {eachRepo.stargazers_count}</h3>
-            <h3> &#127860; {eachRepo.forks_count}</h3>
-            <h3> &#128191; {eachRepo.open_issues}</h3>
+            <div>
+              <h3> &#11088; {eachRepo.stargazers_count}</h3>
+              <h3> &#127860; {eachRepo.forks_count}</h3>
+              <h3> &#128191; {eachRepo.open_issues}</h3>
+            </div>
+
+            <div className="public"> {String(eachRepo.private)}</div>
           </div>
-
-          <div className="public"> {String(eachRepo.private)}</div>
+          <a href={link}>
+            <img src={repoNogLogo}></img>
+          </a>
         </div>
-        <a href={link}>
-          <img src={repoNogLogo}></img>
-        </a>
       </>
     );
   });

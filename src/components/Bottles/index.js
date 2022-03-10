@@ -1,14 +1,18 @@
 import React from "react";
 import repoNog from "../Images/repoNog"
 
+
 import "./index.css";
 
 const Bottles = () => {
+  
   return (
     <>
       <div>
+        <img className="companyBottle" src={repoNog}></img>
         <h2>Check out some repos while you wait for your order!</h2>
-        <h3>
+
+        <h3 className="emojiKeys">
           <p className="emoji">&#127860;</p>= Forks
         </h3>
         <h3>
@@ -17,15 +21,11 @@ const Bottles = () => {
         <h3>
           <p className="emoji">&#128191;</p> = Issues
         </h3>
+
         <h4>
           Has a Repo caught your eye? Click on the red repo icon to visit its
           Github page!
         </h4>
-
-        <img className="companyBottle" src={repoNog}></img>
-
-
-
 
         {/* Credit to Eldar on codepen!
         https://codepen.io/ybprogrammer/pen/qabyeq  */}

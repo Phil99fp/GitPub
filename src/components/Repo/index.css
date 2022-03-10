@@ -36,3 +36,17 @@ img {
   height: 100px;
   margin-right: 100px; 
 }
+
+
+.wholeRepo{
+  display: inline;
+}
+
+
+
+@media only screen and (max-width: 1370px) {
+.wholeRepo{
+  display: block;
+}
+}
+
