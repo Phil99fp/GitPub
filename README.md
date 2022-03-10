@@ -1,6 +1,6 @@
 # GitPub
 
-Welcome to GitPub! Have a drink and check out some repos while you wait! :tropical_drink: 
+Welcome to GitPub! Have a drink and check out some repos while you wait :tropical_drink: 
 
 ## Installation & Usage
 
