@@ -1,7 +1,5 @@
 import React from "react";
 import repoNog from "../Images/repoNog"
-
-
 import "./index.css";
 
 const Bottles = () => {
