@@ -21,7 +21,7 @@ const Repo = ({ user, results }) => {
       <>
         <div className="eachRepo" key={eachRepo.name}>
           <h2>
-            <a href={link}> {eachRepo.name}</a>
+            {eachRepo.name}
           </h2>
 
           <div>

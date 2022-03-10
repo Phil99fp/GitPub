@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Search, Repo, Bottles } from "../../components";
+import { Repo, Bottles } from "../../components";
 import { useSelector, useDispatch } from "react-redux";
-import { getResult } from "../../actions";
+
 import axios from "axios";
 
 function Home() {
@@ -10,39 +10,25 @@ function Home() {
   const [showResults, setShowResults] = useState(false);
   const onClick = () => setShowResults(true);
 
-  // const getResult = async() => {
-  //   return async () => {
-  //     try {
-  //       console.log("anything")
-  //       const githubInfo = await axios(
-  //       `https://api.github.com/users/${searchTerm}/repos`)
-  //       console.log("hello");
-  //       setRepo(githubInfo.data)
-  //       console.log(repo.data)
-  //     } catch (err) {
-  //       console.warn(err.message);
-  //     }
-  //   };
-  // };
+  const getResult = async () => {
+    try {
+      console.log("anything");
+      const githubInfo = await axios.get(
+        `https://api.github.com/users/${username}/repos`
+      );
+      console.log("hello");
+      console.log(githubInfo.data);
+      setRepos(githubInfo.data);
+    } catch (err) {
+      console.warn(err.message);
+      alert("Username not found!");
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  try {
-    console.log("anything");
-    const githubInfo = await axios.get(
-      `https://api.github.com/users/${username}/repos`
-    );
-    console.log("hello");
-    console.log(githubInfo.data);
-    setRepos(githubInfo.data);
-  
-     } catch (err) {
-     console.warn(err.message);
-     alert("Username not found!")
-     }
-
+    getResult()
     setUsername('')
-    console.log("it workeddd")
   };
 
   const updateInput = (e) => {
@@ -63,8 +49,10 @@ function Home() {
             value = {username}
             onChange={updateInput}
           />
-          <input type="submit" value="Search" onClick={onClick} />
+          <input className="button" type="submit" value="Search" onClick={onClick} />
         </form>
+        <br></br>
+        <br></br>
 
         {showResults ? <Repo user={username} results={repos} /> : null}
       </section>
@@ -74,28 +62,3 @@ function Home() {
 
 export default Home;
 
-// const dispatch = useDispatch();
-//  const search = (searchTerm) => dispatch(getResult(searchTerm));
-
-// const [ github, setGithub ] = useState("");
-
-// const [statusMessage, setStatusMessage] = useState("Loading");
-
-// useEffect(() => {
-//   const fetchGithub = async () => {
-//     setStatusMessage("Loading");
-//     try {
-//       let { data } = await axios.get(
-//         `https://api.github.com/users/phil99fp/repos`
-//       );
-//       console.log(data)
-//       setGithub(data[0])
-//       setStatusMessage("");
-//     } catch (err) {
-//       console.warn(err);
-//       setStatusMessage(`Oops there\'s been an issue! ${err.message}`);
-//     }
-//   };
-//   fetchGithub();
-// }, []);
-// console.log(github)

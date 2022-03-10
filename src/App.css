@@ -1,3 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+:root {
+    --primary-font: 'Quicksand', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    width: 100vw;
+    font-family: var(--primary-font);
+    margin: 0;
+    color: brown;
+}
+
+
 form {
   margin-left: 15px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+input {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
 }
