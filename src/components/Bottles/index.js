@@ -1,4 +1,5 @@
 import React from "react";
+import repoNog from "../Images/repoNog"
 
 import "./index.css";
 
@@ -20,6 +21,12 @@ const Bottles = () => {
           Has a Repo caught your eye? Click on the red repo icon to visit its
           Github page!
         </h4>
+
+        <img className="companyBottle" src={repoNog}></img>
+
+
+
+
         {/* Credit to Eldar on codepen!
         https://codepen.io/ybprogrammer/pen/qabyeq  */}
         <div className="loader-wrap">
