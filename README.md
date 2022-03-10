@@ -37,6 +37,6 @@ Welcome to GitPub! Have a drink and check out some repos while you wait :tropica
 ### Challenges
 
 * Mostly CSS issues with the bottles (Samina is very sorry for nearly breaking Philip's laptop with a dodgy css website :disappointed: ) 
-* Not enough time to write tests but check back soon to see our tests! :calendar: 
+* Not enough time to write tests but check back soon to see them! :calendar: 
 
 
