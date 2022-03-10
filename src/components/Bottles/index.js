@@ -7,6 +7,21 @@ const Bottles = () => {
     <>
       <div>
         <h2>Check out some repos while you wait for your order!</h2>
+        <h3>
+          <p className="emoji">&#127860;</p>= Forks
+        </h3>
+        <h3>
+          <p className="emoji">&#11088;</p>= Stars
+        </h3>
+        <h3>
+          <p className="emoji">&#128191;</p> = Issues
+        </h3>
+        <h4>
+          Has a Repo caught your eye? Click on the red repo icon to visit its
+          Github page!
+        </h4>
+        {/* Credit to Eldar on codepen!
+        https://codepen.io/ybprogrammer/pen/qabyeq  */}
         <div className="loader-wrap">
           <div className="bottle-wrap">
             <div className="cap">
@@ -279,6 +294,7 @@ const Bottles = () => {
           </div>
         </div>
       </div>
+      <br></br>
     </>
   );
 };

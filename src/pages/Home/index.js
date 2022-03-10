@@ -6,9 +6,11 @@ import axios from "axios";
 
 function Home() {
   const [username, setUsername] = useState("");
-  const [repos, setRepos] = useState([{ name: "" }]);
+  const [repos, setRepos] = useState([{ }]);
+  const [showResults, setShowResults] = useState(false);
+  const onClick = () => setShowResults(true);
 
-  // const getResult = (searchTerm) => {
+  // const getResult = async() => {
   //   return async () => {
   //     try {
   //       console.log("anything")
@@ -25,19 +27,22 @@ function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  try {
     console.log("anything");
-    const githubInfo = await axios(
-      "https://api.github.com/users/" + username + "/repos"
+    const githubInfo = await axios.get(
+      `https://api.github.com/users/${username}/repos`
     );
     console.log("hello");
     console.log(githubInfo.data);
-
     setRepos(githubInfo.data);
+  
+     } catch (err) {
+     console.warn(err.message);
+     alert("Username not found!")
+     }
 
-    console.log(repos);
-
-    //setUsername('')
+    setUsername('')
+    console.log("it workeddd")
   };
 
   const updateInput = (e) => {
@@ -47,25 +52,21 @@ function Home() {
 
   return (
     <>
-    <Bottles/>
+      <Bottles />
       <section>
         <form role="form" onSubmit={handleSubmit}>
-          <label htmlFor="usernameSearch">Username: </label>
+          <label htmlFor="usernameSearch">Github Username: </label>
           <input
             id="usernameSearch"
             role="username"
             type="text"
-            value={username}
+            value = {username}
             onChange={updateInput}
           />
-          <input type="submit" value="Search" />
+          <input type="submit" value="Search" onClick={onClick} />
         </form>
 
-        <p>
-          Lorem ipsum dolor sit amet. Ad omnis esse aut ullam obcaecati qui quas
-          voluptatem qui error
-        </p>
-        <Repo user={username} results={repos} />
+        {showResults ? <Repo user={username} results={repos} /> : null}
       </section>
     </>
   );
