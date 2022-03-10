@@ -17,7 +17,7 @@ const Repo = ({ user, results }) => {
 
     return (
       <>
-        <div className = "wholeRepo">
+        <div className="wholeRepo">
           <div className="eachRepo" key={eachRepo.name}>
             <h2>{eachRepo.name}</h2>
             <div>
@@ -27,7 +27,7 @@ const Repo = ({ user, results }) => {
             </div>
             <div className="public"> {String(eachRepo.private)}</div>
           </div>
-          <a href={link}>
+          <a target="_blank" href={link}>
             <img src={repoNogLogo}></img>
           </a>
         </div>
