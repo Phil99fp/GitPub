@@ -35,6 +35,7 @@ Welcome to GitPub! Have a drink and check out some repos while you wait!
 
 ### Challenges
 
-* No challenges as of 10:35am 25/02/22
+* Mostly CSS issues with the bottles 
+* Not enough time to write tests but check back soon to see our tests! 
 
 
