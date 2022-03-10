@@ -27,7 +27,7 @@ Welcome to GitPub! Have a drink and check out some repos while you wait :tropica
 
 ### Wins
 
-* Created using React
+* Created website using React
 * Successfully receives github repositories upon username search
 * Displays fork, issues and stars for each repo 
 * Option to view each repository on GitHub by clicking the associated button
