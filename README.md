@@ -17,7 +17,7 @@ Welcome to GitPub! Have a drink and check out some repos while you wait!
 
 ### Deployment
 
-* View the client live with its database on [Netlify](https://thegitpub.netlify.app/) 
+* View the client live on [Netlify](https://thegitpub.netlify.app/) 
 
 ## Changelog
 
